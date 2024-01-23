@@ -13,7 +13,7 @@ const SkillCart = ({factImgSrc,no,title,desc}) => {
             <h1 className="fw-bold">{no}</h1>
             <h6 className="text-white fs-4">{title}</h6>
             <p className="text-white">{desc}</p>
-            <button className="fs-6 btns-trans text-uppercase">Read More <FontAwesomeIcon className="ms-2" icon={faArrowRight} /></button>
+            <button className="btns-trans text-uppercase">Read More <FontAwesomeIcon className="ms-2" icon={faArrowRight} /></button>
         </div>
       </div>
     </>

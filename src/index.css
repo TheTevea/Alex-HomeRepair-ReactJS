@@ -12,7 +12,8 @@
   background-color: #fda12b;
   border: none;
   padding: 16px 48px !important;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
 }
 .btns:hover {
@@ -28,7 +29,7 @@
 }
 
 .btns-trans {
-  font-size: 20px;
+  font-size: 15px;
   background-color: transparent;
   border: none;
   color: #fff;
@@ -39,9 +40,13 @@
 }
 
 .btns-trans-orange{
-  font-size: 20px;
+  font-size: 15px;
   background-color: transparent;
   border: none;
+  color: #fda12b;
   transition: 0.1s;
 }
 
+/* .btns-trans-orange:hover{
+  color: #fff;
+} */

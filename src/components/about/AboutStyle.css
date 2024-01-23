@@ -1,0 +1,15 @@
+.about-container{
+    /* height: 480px; */
+    overflow: hidden;
+}
+.special-note h6{
+    font-size: 17px;    
+    font-weight: 600;
+}
+.tag{
+    padding: 20px 30px !important;
+    background-color: #fda12b;
+}
+.desc{
+    font-size: 16px;
+}

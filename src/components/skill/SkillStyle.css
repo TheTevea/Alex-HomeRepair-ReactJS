@@ -1,0 +1,12 @@
+
+.skill-container .details {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  .skill-container .details h1{
+    font-size: 8rem;
+    -webkit-text-stroke: 3px #fda12b;
+  color:transparent;
+  font-family: "Poppins", sans-serif;
+
+  }

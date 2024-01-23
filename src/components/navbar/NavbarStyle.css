@@ -1,0 +1,56 @@
+.header{
+    background-color: #fff !important;
+    transition: 0.3s ease-out;
+}
+.header h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.nav-menu li a, .nav-menu li{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8D9297;
+    cursor: pointer;
+}
+.nav-menu .active{
+    color: #FDA12B;
+}
+.nav-menu li a:hover:not(.active), .nav-menu li:hover{
+    color: #FDA12B;
+}
+.hamburger{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hamburger-icon{
+    color: #8D9297;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-menu {
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      background-color: #fff;
+      /* background-color: red; */
+      position: absolute;
+      left: 0;
+      top: 80px;
+      z-index: 3;
+      transition: .3s;
+      padding: 0 50px  !important;
+    }
+    .nav-menu li:first-child{
+        width: 100%;
+        border-top: 2px solid #8D9297;
+        padding-top: 15px !important; 
+    }
+    .nav-menu.toggle{
+        height: 310px;
+    }
+  }

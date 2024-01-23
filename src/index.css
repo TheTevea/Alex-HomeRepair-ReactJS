@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;700&display=swap');
+
+
+:not(.slider-container) {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Outfit", sans-serif;
+}
+
+.btns {
+  background-color: #fda12b;
+  border: none;
+  padding: 16px 48px !important;
+  font-size: 20px;
+  color: #fff;
+}
+.btns:hover {
+  background-color: #ca8122;
+  color: #d5c8c8;
+}
+
+.border-color {
+  border-left: 5px solid #fda12b;
+}
+.icon-color {
+  color: #fda12b;
+}
+
+.btns-trans {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  transition: 0.1s;
+}
+.btns-trans:hover{
+  color: #fda12b;
+}
+
+.btns-trans-orange{
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  transition: 0.1s;
+}
+

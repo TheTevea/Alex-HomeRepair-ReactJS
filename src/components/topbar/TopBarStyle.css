@@ -1,0 +1,22 @@
+/* #8D9297 */
+.topbar-container{
+    background-color: #F8F9FA;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    
+}
+.left h4,.right .icons{
+    font-size: 16px;
+    padding: 9px !important;
+    color: #8D9297;
+}
+.left h4 span{
+    font-size: 14px;
+}
+
+.right .icons{
+    font-size: 16px;
+    width: 20px;
+    color: #8D9297;
+    cursor: pointer;
+}

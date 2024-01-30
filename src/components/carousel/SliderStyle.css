@@ -56,14 +56,14 @@
   font-size: 5rem;
   font-weight: 700;
 }
-.breadcrumb-item {
+.slider-cotainer .breadcrumb-item {
   position: relative;
   padding: 0 1rem !important;
 }
-.breadcrumb-item:nth-child(1) {
+.slider-cotainer .breadcrumb-item:nth-child(1) {
   padding-left: 0 !important;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+.slider-cotainer .breadcrumb-item + .breadcrumb-item::before {
   content: "";
   width: 20px;
   height: 20px;

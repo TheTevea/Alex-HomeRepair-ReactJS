@@ -7,6 +7,9 @@ import Skill from "../components/skill/Skill";
 import WhyUs from "../components/whychooseus/WhyUs";
 import ServiceSection from "../components/ourservice/ServiceSection";
 import AppointmentSection from "../components/appointment/AppointmentSection";
+import Ourteam from "../components/ourteam/ourteam";
+import Testiminal from "../components/testiminal/Testiminal";
+import Footer from "../components/footer/Footer";
 
 
 const home = () => {
@@ -19,8 +22,10 @@ const home = () => {
      <Skill />
      <WhyUs />
      <ServiceSection />
-     <AppointmentSection />
-
+     <AppointmentSection containerClass="mt-5 py-5 bg-appointment-container" headColor="text-white" titlColor="text-white" descColor="text-white" />
+     <Ourteam />
+     <Testiminal />
+     <Footer marginVal="mt-5"/> 
     </div>
   );
 };

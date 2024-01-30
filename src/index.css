@@ -28,7 +28,7 @@
   color: #fda12b;
 }
 
-.btns-trans {
+.btns-trans,.btn-downl {
   font-size: 15px;
   background-color: transparent;
   border: none;
@@ -47,6 +47,10 @@
   transition: 0.1s;
 }
 
-/* .btns-trans-orange:hover{
-  color: #fff;
-} */
+.btn-downl{
+  color: #fda12b;
+  font-size: inherit;
+}
+.btn-downl:hover{
+  color: #ca8122;
+}

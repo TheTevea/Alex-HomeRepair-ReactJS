@@ -1,0 +1,41 @@
+.footer-container{
+    background-color: #182333;
+}
+.signup-field input.form-control {
+    outline: none;
+  }
+.signup-field.form-control:focus {
+    box-shadow: none !important;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color:rgba(245, 188, 39, 0.3);
+    border: none;
+  }
+.footer-container input{
+    outline: none;
+    border-radius: 0 !important;
+    border: 1px solid #fff;
+    font-size: 16px;
+    background-color: #182333;
+    color: #fff !important;
+}
+.footer-container input::placeholder{
+color: #fff !important;
+}
+
+.social-wrapper .icons{
+    color: #fda12b;
+    transition: 0.3s;
+    margin-right: 5px !important;
+    font-size: 10px !important;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    padding: 8px !important;
+    border: 1px solid #fda12b;
+}
+
+.social-wrapper .icons:hover{
+    background-color: #fda12b;
+    color: #fff;
+}

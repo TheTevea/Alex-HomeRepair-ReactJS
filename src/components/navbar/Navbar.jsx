@@ -2,8 +2,9 @@ import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 import "./NavbarStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   faAngleDown,
   faBars,
@@ -12,10 +13,17 @@ import {
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [dropd, setdropd] = useState(false);
+  const [active,setActive] = useState(true);
+
+  useEffect(() => {
+    // Set active to false after the initial render
+    setActive(false);
+  }, []);
 
   return (
     <div className="container-fluid">
-      <div className="header d-flex justify-content-between align-items-center px-5 py-3">
+      <div className="header d-flex justify-content-between align-items-center px-3 px-lg-5">
         <Link to="/" className="d-flex text-decoration-none text-dark">
           <h1>
             <FontAwesomeIcon
@@ -28,31 +36,43 @@ const Navbar = () => {
         </Link>
         <ul className={click? "nav-menu toggle d-flex list-unstyled gap-4" : "nav-menu d-flex list-unstyled gap-4"}>
           <li>
-            <Link className="text-decoration-none active" to="/">
+            <NavLink className={active ? "text-decoration-none active" : "text-decoration-none"} to="/" >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="text-decoration-none" to="/aboutus">
+            <NavLink className="text-decoration-none" to="/aboutus" >
               About Us
-            </Link>
+            </NavLink>
           </li>
-          <li className="d-flex align-items-center gap-1">
+          <li>
+            <NavLink className="text-decoration-none" to="/ourservice">
+              Our Service
+            </NavLink>
+          </li>
+          <li className="d-flex align-items-center page gap-1 position-relative py-4" onClick={()=>setdropd(!dropd)}>
             Page
             <FontAwesomeIcon
               className="mt-1 position-relative"
               icon={faAngleDown}
             />
+            <ul className="list-unstyled page-dropdown">
+              <li><Link className="text-decoration-none" to="/aboutus">
+              About Us
+            </Link></li>
+              <li><Link className="text-decoration-none" to="/aboutus">
+              About Us
+            </Link></li>
+              <li><Link className="text-decoration-none" to="/aboutus">
+              About Us
+            </Link></li>
+            </ul>
           </li>
+          
           <li>
-            <Link className="text-decoration-none" to="/ourservice">
-              Our Service
-            </Link>
-          </li>
-          <li>
-            <Link className="text-decoration-none" to="/contactus">
+            <NavLink className="text-decoration-none" to="/contactus" >
               Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div

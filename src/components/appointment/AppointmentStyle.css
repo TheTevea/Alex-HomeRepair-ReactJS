@@ -1,24 +1,24 @@
-.appointment-container{
+.bg-appointment-container{
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 
 }
 
-input{
+.bg-appointment-container input{
     outline: none;
     border: none;
     font-size: 16px;
     background-color: #182333;
     color: #8d9297;
 }
-input:focus{
+.bg-appointment-container input:focus{
     outline-style: solid;
     outline-width: 3px;
     outline-color:rgba(245, 188, 39, 0.3);
     transition: 0.1s;
 }
 
-textarea{
+.bg-appointment-container textarea{
     outline: none;
     border: none;
     font-size: 16px;
@@ -26,9 +26,46 @@ textarea{
     color: #8d9297;
 }
 
-textarea:focus{
+.bg-appointment-container textarea:focus{
     outline-style: solid;
     outline-width: 3px;
     outline-color:rgba(245, 188, 39, 0.3);
     transition: 0.1s;
+}
+.bg-appointment-container .header{
+    background-color: transparent !important;
+}
+
+/* Light Appointment Section */
+
+.appointment-container input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: #F8F9FA;
+    color: #8d9297;
+}
+.appointment-container input:focus{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color:rgba(245, 188, 39, 0.3);
+    transition: 0.1s;
+}
+
+.appointment-container textarea{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: #F8F9FA;
+    color: #8d9297;
+}
+
+.appointment-container textarea:focus{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color:rgba(245, 188, 39, 0.3);
+    transition: 0.1s;
+}
+.appointment-container .header{
+    background-color: transparent !important;
 }

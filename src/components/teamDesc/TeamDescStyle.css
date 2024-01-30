@@ -1,0 +1,20 @@
+.Desc-Card{
+    display: flex;
+    align-items: center;
+}
+.Desc-Card img{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .Desc-Card img{
+        width: 100%;
+    }
+    .Desc-Card{
+        flex-direction: column;
+    }   
+    .team-details{
+        width: 100%;
+    }
+  }

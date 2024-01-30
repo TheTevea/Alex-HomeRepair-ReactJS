@@ -5,6 +5,10 @@
 .header h1 {
     font-size: 40px;
     font-weight: 600;
+    
+}
+.nav-menu > li{
+    padding: 26px 0 !important;
 }
 .nav-menu li a, .nav-menu li{
     font-size: 16px;
@@ -26,8 +30,30 @@
 .hamburger-icon{
     color: #8D9297;
 }
+.page-dropdown{
+    top: 75px;
+    left: -30px;
+    z-index: 3;
+    display: none;
+    text-align: center;
+    width: 120px;
+    padding: 20px !important;
+    background-color: #fff;
+    border-top: 3px solid #FDA12B;
+    opacity: 0;
+    position: absolute;
+}
+.page:hover .page-dropdown{
+    display: block;
+    transition: 0.5s;
+    opacity: 1;
+}
 
 @media screen and (max-width: 991px) {
+    .header{
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
     .nav-menu {
       flex-direction: column;
       justify-content: start;
@@ -35,22 +61,37 @@
       width: 100%;
       height: 0;
       overflow: hidden;
-      /* background-color: rgba(0, 0, 0, 0.5); */
       background-color: #fff;
-      /* background-color: red; */
       position: absolute;
       left: 0;
-      top: 80px;
+      top: 64px;
       z-index: 3;
-      transition: .3s;
-      padding: 0 50px  !important;
+      transition: .3s ease-in-out;
+     
+      
     }
-    .nav-menu li:first-child{
+    .nav-menu > li:first-child{
         width: 100%;
-        border-top: 2px solid #8D9297;
-        padding-top: 15px !important; 
+        
+        /* padding-top: 15px !important;  */
     }
     .nav-menu.toggle{
-        height: 310px;
+        height: inherit;
+        border-top: 2px solid #8D9297;
+        padding: 20px !important;
+    }
+    .nav-menu > li{
+        width: 100%;
+        padding: 0px 0 !important;
+    }
+    .page-dropdown{
+        border:  1px solid #FDA12B;
+        padding: 10px !important;
+        position: static;
+        width: 100%;
+        text-align: start;
+    }
+    .page{
+        flex-wrap: wrap;
     }
   }

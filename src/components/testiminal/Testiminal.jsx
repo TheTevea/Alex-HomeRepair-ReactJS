@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation,Autoplay } from "swiper/modules";
 // swiper
 
 const Testiminal = () => {
@@ -56,9 +56,9 @@ const Testiminal = () => {
                     }}
                     loop={true}
                     navigation={true}
-                    modules={[ Navigation]}
+                    modules={[ Navigation,Autoplay]}
                     className="mySwiper"
-                    autoplay={{ delay: 2000 }}
+                    autoplay={{ delay: 3000 }}
                     speed={800}
                     >
                     <SwiperSlide className="position-relative">

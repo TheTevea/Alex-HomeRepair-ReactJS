@@ -10,7 +10,8 @@ const WhyUs = () => {
     <div className="whyus-container overflow-hidden my-5 d-flex justify-content-center">
         <div className="container">
       <div className="row mt-5">
-        <div className="col-lg-6  col-12">
+        <div className="col-lg-6  col-12" data-aos="fade-up"
+     data-aos-delay="30" data-aos-duration="500">
           <div className="right mx-4">
             <HeadTag tagName="WHY CHOOSE US!" text="Our Specialization And Company Features"/>
             <div className="desc text-secondary">
@@ -52,7 +53,8 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-6 col-12" data-aos="fade-up"
+     data-aos-delay="30" data-aos-duration="1500">
           <BannerImg imgSrc={FeatureImg}  imgSize="450px"/>
         </div>
       </div>

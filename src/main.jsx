@@ -6,6 +6,8 @@ import "./index.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import App from "./App.jsx";
+// importing aos
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>

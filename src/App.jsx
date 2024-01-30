@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import AboutUs from "./routes/AboutUs";
@@ -8,8 +8,13 @@ import Feature from "./routes/Feature";
 import Appointment from "./routes/Appointment";
 import Testimonal from "./routes/Testimonal";
 import OurTeam from "./routes/OurTeam";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Routes>

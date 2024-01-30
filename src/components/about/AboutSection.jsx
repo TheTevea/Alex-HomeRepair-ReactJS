@@ -10,10 +10,12 @@ const About = () => {
     <div className="about-container overflow-hidden d-flex justify-content-center my-5">
         <div className="container mt-5">
       <div className="row">
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-6 col-12" data-aos="fade-up"
+     data-aos-delay="30" data-aos-duration="500" >
           <BannerImg imgSrc={AboutImg}  imgSize="370px"/>
         </div>
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-6 col-12" data-aos="fade-up" 
+     data-aos-delay="30" data-aos-duration="1500">
           <div className="right mx-4">
             <HeadTag tagName="about us" text="Unique Solutions For Residentials & Industries!"/>
             <div className="desc text-secondary">

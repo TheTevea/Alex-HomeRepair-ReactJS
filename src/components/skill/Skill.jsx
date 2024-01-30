@@ -7,10 +7,10 @@ import React from "react";
 const Skill = () => {
   return (
     <div className="skill-container">
-      <div className="container-fluid bg-info ">
+      <div className="container-fluid ">
         <div className="row">
           {SkillCardData.map((value,index)=>{
-            return <SkillCart {...value} key={index}/>
+            return <SkillCart {...value} key={index} duraTime={index * 500 + 900}/>
           })}
         </div>
       </div>

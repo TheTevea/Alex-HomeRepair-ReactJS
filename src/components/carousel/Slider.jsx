@@ -1,13 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./SliderStyle.css";
-import { Navigation } from "swiper/modules";
+import { Navigation,Autoplay } from "swiper/modules";
 import CarouselImg1 from "../../assets/carousel-1.jpg";
 import CarouselImg2 from "../../assets/carousel-2.jpg";
+
+
+
 export default function App() {
+  
   return (
     <div className="container-fluid">
       <div className="slider-cotainer">
@@ -17,9 +21,9 @@ export default function App() {
           }}
           loop={true}
           navigation={true}
-          modules={[ Navigation]}
+          modules={[ Navigation,Autoplay]}
           className="mySwiper"
-          autoplay={{ delay: 2000 }}
+          autoplay={{ delay: 3000 }}
           speed={800}
         >
           <SwiperSlide className="position-relative">
@@ -28,8 +32,8 @@ export default function App() {
               <div className="text-start details-container container">
                 <div className="row justify-content-center">
                 <div className="col-11 col-lg-10">
-                <h5 className="text-light fs-3 fw-bold mb-3">WELCOME TO APEX</h5>
-                <h1 className="text-light mb-3">A Construction & Renovation Company</h1>
+                <h5 className="text-light fs-3 fw-bold mb-3" data-aos="fade-down" data-aos-offset="10">WELCOME TO APEX</h5>
+                <h1 className="text-light mb-3" data-aos="fade-down" data-aos-duration="800">A Construction & Renovation Company</h1>
                 <ol className="breadcrumb mb-4 pb-2">
                   <li className="breadcrumb-item fs-5 text-light">Commercial</li>
                   <li className="breadcrumb-item fs-5 text-light">Residential</li>
@@ -47,8 +51,8 @@ export default function App() {
               <div className="text-start details-container container">
                 <div className="row justify-content-center">
                 <div className="col-11 col-lg-10">
-                <h5 className="text-light fs-3 fw-bold mb-3">WELCOME TO APEX</h5>
-                <h1 className="text-light mb-3">Professional Tiling & Painting Services</h1>
+                <h5 className="text-light fs-3 fw-bold mb-3" data-aos="fade-down" data-aos-offset="10">WELCOME TO APEX</h5>
+                <h1 className="text-light mb-3" data-aos="fade-down" data-aos-duration="800">Professional Tiling & Painting Services</h1>
                 <ol className="breadcrumb mb-4 pb-2">
                   <li className="breadcrumb-item fs-5 text-light">Commercial</li>
                   <li className="breadcrumb-item fs-5 text-light">Residential</li>

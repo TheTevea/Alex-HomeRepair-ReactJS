@@ -5,10 +5,10 @@ import OurTeamCard from "./OurTeamCard";
 
 import React from 'react'
 
-const ourteam = () => {
+const ourteam = ({marginTopSize}) => {
   return (
-    <div className="d-flex justify-content-center my-5">
-        <div className="container my-5">
+    <div className={`d-flex justify-content-center ${marginTopSize ? marginTopSize : "my-5"}`}>
+        <div className={`container ${marginTopSize ? marginTopSize : "my-5"}`}>
             <div className="row px-4">
                 <div className="col-md-6 pe-4">
                 <HeadTag tagName="OUR TEAM" text="Our Expert Worker"/>

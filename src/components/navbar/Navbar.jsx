@@ -57,15 +57,18 @@ const Navbar = () => {
               icon={faAngleDown}
             />
             <ul className="list-unstyled page-dropdown">
-              <li><Link className="text-decoration-none" to="/aboutus">
-              About Us
-            </Link></li>
-              <li><Link className="text-decoration-none" to="/aboutus">
-              About Us
-            </Link></li>
-              <li><Link className="text-decoration-none" to="/aboutus">
-              About Us
-            </Link></li>
+              <li><NavLink className="text-decoration-none" to="/feature">
+              Feature
+            </NavLink></li>
+              <li><NavLink className="text-decoration-none" to="/appointment">
+              Appointment
+            </NavLink></li>
+              <li><NavLink className="text-decoration-none" to="/testimonal">
+              Testimonal
+            </NavLink></li>
+            <li><NavLink className="text-decoration-none" to="/ourteam">
+              Our Team
+            </NavLink></li>
             </ul>
           </li>
           

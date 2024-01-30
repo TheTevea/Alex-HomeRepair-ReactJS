@@ -32,11 +32,11 @@
 }
 .page-dropdown{
     top: 75px;
-    left: -30px;
+    left: -45px;
     z-index: 3;
     display: none;
-    text-align: center;
-    width: 120px;
+    text-align: start;
+    width: 150px;
     padding: 20px !important;
     background-color: #fff;
     border-top: 3px solid #FDA12B;

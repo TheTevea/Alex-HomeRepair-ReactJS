@@ -15,12 +15,8 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 // swiper
 
-
-
-
-
 const Testiminal = () => {
-    const progressCircle = useRef(null);
+  const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);

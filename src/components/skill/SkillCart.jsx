@@ -18,7 +18,7 @@ const SkillCart = ({factImgSrc,no,title,desc,duraTime}) => {
             <h1 className="fw-bold">{no}</h1>
             <h6 className="text-white fs-4">{title}</h6>
             <p className="text-white">{desc}</p>
-            <button className="btns-trans text-uppercase ms-2">Read More <FontAwesomeIcon icon={faArrowRight} /></button>
+            <button className="btns-trans text-uppercase">Read More <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
       </div>
     </>

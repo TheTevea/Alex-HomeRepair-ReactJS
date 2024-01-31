@@ -26,7 +26,8 @@ const Testiminal = () => {
     <div className="testiminal-container d-flex justify-content-center">
         <div className="container">
             <div className="row p-4">
-                <div className="col-lg-5 pe-4">
+                <div className="col-lg-5 pe-4" data-aos="fade-up"
+     data-aos-delay="30" data-aos-duration="500" >
                 <HeadTag tagName="TESTIMONIAL" text="What Our Happy Clients Say!"/>
                 <p className="text-secondary">
                 Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
@@ -49,7 +50,8 @@ const Testiminal = () => {
                 </div>
                 </div>
                 </div>
-                <div className="col-lg-7 pe-4 right">
+                <div className="col-lg-7 pe-4 right" data-aos="fade-up"
+     data-aos-delay="30" data-aos-duration="1500" >
                     <Swiper
                     pagination={{
                         type: "fraction",

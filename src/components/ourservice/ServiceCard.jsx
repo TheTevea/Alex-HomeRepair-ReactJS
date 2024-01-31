@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from 'react'
 
-const ServiceSection = ({ServiceImgSrc,title,text}) => {
+const ServiceSection = ({ServiceImgSrc,title,text,duraTime}) => {
   return (
     <>
-    <div className="col-lg-4 p-2 col-md-6">
+    <div className="col-lg-4 p-2 col-md-6" data-aos="fade-up" 
+     data-aos-offset="200"
+     data-aos-duration={`${duraTime ? duraTime : "900"}`}>
         <div className="sv-cart">
             <img src={ServiceImgSrc} className="w-100" alt="Service Image" />
         <div className="details text-center d-flex flex-column gap-3 p-4">

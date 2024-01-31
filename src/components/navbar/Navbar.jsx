@@ -16,13 +16,24 @@ const Navbar = () => {
   const [dropd, setdropd] = useState(false);
   const [active,setActive] = useState(true);
 
+  const [sticky, setsticky] = useState(false);
+  const changeSticky = () => {
+    if (window.scrollY >= 300) {
+      setsticky(true);
+    } else {
+      setsticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeSticky);
+
   useEffect(() => {
     // Set active to false after the initial render
     setActive(false);
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid nav-animation sticky-top" style={{ top: sticky ? "0px" : "-100px" }} >
       <div className="header d-flex justify-content-between align-items-center px-3 px-lg-5">
         <Link to="/" className="d-flex text-decoration-none text-dark">
           <h1>

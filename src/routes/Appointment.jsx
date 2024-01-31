@@ -11,7 +11,7 @@ const Appointment = () => {
       <TopBar />
       <Navbar />
       <Hero menuName="Appointment"/>
-      <AppointmentSection containerClass="pb-5 appointment-container" headColor="text-secondary" titlColor="text-dark" descColor="text-secondary" />
+      <AppointmentSection containerClass="pb-5 appointment-container" headColor="text-secondary" titlColor="text-dark" descColor="text-secondary" animationStyle="fade-up" durationAnima="1500" />
       <Footer />
     </div>
   )

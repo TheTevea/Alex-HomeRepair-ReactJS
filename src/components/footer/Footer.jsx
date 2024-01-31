@@ -13,7 +13,10 @@ import "./FooterStyle.css"
 
 const Footer = ({marginVal}) => {
   return (
-    <div className={`footer-container py-5 ${marginVal}`}>
+    <div className={`footer-container py-5 ${marginVal}`} data-aos="fade-zoom-in" 
+    data-aos-offset="0"
+    data-aos-duration="450"
+    data-aos-easing="ease-in-out">
         <div className="contaier-fluid pt-5">
             <div className="container m-auto">
                 <footer className="mx-4">

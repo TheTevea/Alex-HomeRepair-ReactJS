@@ -7,6 +7,9 @@
     font-weight: 600;
     
 }
+.nav-animation{
+    transition: all 0.5s;
+}
 .nav-menu > li{
     padding: 26px 0 !important;
 }

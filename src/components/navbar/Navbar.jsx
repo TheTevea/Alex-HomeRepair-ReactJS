@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import {
   faAngleDown,
+  faArrowUpLong,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
@@ -100,6 +101,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <button className={`position-fixed top-button bottom-0 end-0 m-5 ${sticky ? "d-flex" : "d-none"}`}  onClick={()=> window.scrollTo({ top: 0,behavior: "smooth",})}><FontAwesomeIcon className="fs-5" icon={faArrowUpLong} /></button>
     </div>
   );
 };

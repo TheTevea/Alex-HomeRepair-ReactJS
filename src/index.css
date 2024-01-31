@@ -8,7 +8,7 @@
   font-family: "Outfit", sans-serif;
 }
 
-.btns {
+.btns,.top-button {
   background-color: #fda12b;
   border: none;
   padding: 16px 48px !important;
@@ -16,7 +16,12 @@
   font-weight: 500;
   color: #fff;
 }
-.btns:hover {
+.top-button{
+  padding: 15px 16px !important;
+  border-radius: 1px;
+  transition: 0.5s ease-in-out;
+}
+.btns:hover,.top-button:hover {
   background-color: #ca8122;
   color: #d5c8c8;
 }
